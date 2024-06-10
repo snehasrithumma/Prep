@@ -14,6 +14,10 @@ deq.pop()
 deq.popleft()
 print(deq)
 
+
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 # The Namedtuple() solves a very major problem in the field of computer science. 
 # Usual tuples need to remember the index of each field of a tuple object, 
 # however, namedtuple() solves this by simply returning with names for each position in the tuple.
@@ -24,6 +28,10 @@ from collections import namedtuple
 Student = namedtuple('Student', 'fname, lname, age')  
 s1 = Student('Peter', 'James', '13')  
 print(s1.fname) 
+
+
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 # ChainMap
 
@@ -36,6 +44,10 @@ dictionary1 = { 'a' : 1, 'b' : 2 }
 dictionary2 = { 'c' : 3, 'b' : 4 }  
 chain_Map = collections.ChainMap(dictionary1, dictionary2)  
 print(chain_Map.maps)  
+
+
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 # OrderedDict
 
