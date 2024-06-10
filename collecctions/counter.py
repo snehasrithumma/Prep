@@ -1,18 +1,8 @@
+# Counter is a built-in data structure which is used to 
+# count the occurrence of each value present in an array or list.
+
 from collections import Counter  
 list = [1,2,3,4,5,6,7]  
 answer=Counter()
 answer = Counter(list)  
 print(answer[2])  
-
-list2 = list
-print(list2)
-print(list)
-list[0] = 10
-print(list2)
-print(list)
-import copy
-list3 = copy.deepcopy(list)
-print(list3)
-list[0] = 100
-print(list3)
-print(list)
