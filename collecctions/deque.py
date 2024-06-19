@@ -1,3 +1,31 @@
+# Counter is a built-in data structure which is used to 
+# count the occurrence of each value present in an array or list.
+
+from collections import Counter  
+list = [1,2,2,4,5,6,7]  
+answer=Counter()
+answer = Counter(list)  
+print(answer[2])  
+
+
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Defaultdict is exactly like a dictionary in python. 
+# The only difference is that it 
+# does not give an exception/key error 
+# when you try to access the non-existent key.
+from collections import defaultdict  
+nums = defaultdict(int)  
+nums['one'] = 1  
+nums['two'] = 2
+nums['three'] = 3 
+print(nums['four'])  
+
+
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 # Deque is an optimal version of list used for inserting and removing items.
 #  It can add/remove items from either start or the end of the list.
 from collections import deque  
