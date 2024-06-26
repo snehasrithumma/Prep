@@ -50,11 +50,8 @@ def floyd_warshall(graph):
         distances[v][v] = 0
 
     for k in graph:
-        print('----k-----', k)
         for i in graph:
-            print('----i-----', i)
             for j in graph:
-                print('----i-----', j)
                 print(distances)
                 distances[i][j] = min(distances[i][j], distances[i][k]+ distances[k][j])
 
