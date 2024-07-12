@@ -46,6 +46,7 @@ print('---------')
 # (including both positive and negative weights, but no negative weight cycles).
 def floyd_warshall(graph):
     distances = {v: dict(graph[v]) for v in graph} 
+    print(distances)
     for v in graph:
         distances[v][v] = 0
 

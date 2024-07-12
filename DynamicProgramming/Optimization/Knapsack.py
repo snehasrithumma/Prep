@@ -12,8 +12,11 @@ def knapsack(values, weights, capacity):
     return dp[n][capacity]
 
 
-values = [60, 100, 120]
-weights = [10, 20, 30]
-capacity = 50
+# values = [60, 100, 120]
+# weights = [10, 20, 30]
+# capacity = 50
+values = [6, 10, 12]
+weights = [1, 2, 3]
+capacity = 5
 
 print(knapsack(values, weights, capacity))

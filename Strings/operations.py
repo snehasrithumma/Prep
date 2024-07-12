@@ -8,3 +8,14 @@ print(text.isupper())   # Output: False (contains lowercase characters)
 print(text.istitle())   # Output: True (title case)
 print(text.isidentifier()) # Output: True (valid identifier)
 print(text.isprintable())  # Output: True (all characters are printable)
+
+
+from string import Template
+
+temp = Template("im practicing ${title} how to do it using ${concept}")
+
+print(temp.substitute(title='string sustitution', concept='template strings'))
+
+data = {"title": 'strings',
+        "concept": "string formating"}
+print(temp.substitute(data))

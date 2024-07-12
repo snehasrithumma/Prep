@@ -23,9 +23,12 @@ def fractional_knapsack(values, weights, capacity):
     return max_value, fractions
 
 # Example usage:
-values = [60, 100, 120]
-weights = [10, 20, 30]
-capacity = 50
+# values = [60, 100, 120]
+# weights = [10, 20, 30]
+# capacity = 50
+values = [6, 10, 12]
+weights = [1, 2, 3]
+capacity = 5
 
 max_value, fractions = fractional_knapsack(values, weights, capacity)
 print(f"Maximum value in knapsack: {max_value}")

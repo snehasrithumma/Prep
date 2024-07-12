@@ -13,15 +13,12 @@ def print_linked_list(head: ListNode) -> None:
 def reverse(head):
     if not head and not head.next:
         return head
-    
-    print(print_linked_list((l1)))
     prev , current = None, head
     while current:
         temp = current.next
         current.next = prev
         prev = current
         current = temp
-        print(print_linked_list((prev)))
 
     return prev
 

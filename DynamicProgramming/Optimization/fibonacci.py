@@ -1,4 +1,4 @@
-# memoization
+# memoization top-down approach
 def fib(n, memo={}):
     if n<=2:
         return 1
@@ -9,7 +9,7 @@ def fib(n, memo={}):
     return memo[n]
 
 
-print(fib(7))
+print(fib(10))
 
 
 # tabulation
