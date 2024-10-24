@@ -85,15 +85,15 @@ print(chain_Map.maps)
 from collections import OrderedDict  
 order = OrderedDict()  
 order['a'] = 1  
-order['b'] = 2  
 order['c'] = 3  
+order['b'] = 2  
 print(order)  
 
 #unordered dictionary
 unordered=dict()
 unordered['a'] = 1  
-unordered['b'] = 2  
 unordered['c'] = 3 
+unordered['b'] = 2  
 print("Default dictionary", unordered)
 
 

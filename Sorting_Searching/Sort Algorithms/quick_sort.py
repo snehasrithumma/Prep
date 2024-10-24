@@ -1,7 +1,7 @@
 def quick(nums):
     if len(nums) == 0: return []
     pivot = nums[-1]
-    left , right = [], []
+    left, right = [], []
     for x in nums[0:-1]:
         if x<=pivot:
            left.append(x)
