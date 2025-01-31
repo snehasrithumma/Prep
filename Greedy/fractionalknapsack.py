@@ -5,7 +5,6 @@ def fractional_knapsack(values, weights, capacity):
     
     # Sort items by value per unit weight
     index.sort(key=lambda i: ratio[i], reverse=True)
-    print(index)
     max_value = 0
     fractions = [0] * len(values)
 
@@ -16,19 +15,19 @@ def fractional_knapsack(values, weights, capacity):
             max_value += values[i]
             capacity -= weights[i]
         else:
-            fractions[i] = capacity / weights[i]
-            max_value += values[i] * fractions[i]
+            fractions[i] = capacity / weights[i]            
+            max_value += ratio[i] * capacity
             break
 
     return max_value, fractions
 
 # Example usage:
-# values = [60, 100, 120]
-# weights = [10, 20, 30]
-# capacity = 50
-values = [6, 10, 12]
-weights = [1, 2, 3]
-capacity = 5
+values = [60, 100, 120]
+weights = [10, 20, 30]
+capacity = 15
+# values = [6, 10, 12]
+# weights = [1, 2, 3]
+# capacity = 5
 
 max_value, fractions = fractional_knapsack(values, weights, capacity)
 print(f"Maximum value in knapsack: {max_value}")
